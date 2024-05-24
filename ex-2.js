@@ -7,7 +7,10 @@ let hasBoughtProductFromITCategory = true;
 let hasAttendedDiscountEvent = true;
 let isPlatinum = true;
 
-let hasPromotion = true;
-let john = (lastMonthPaidMoreThan4000 && isPlatinum && !hasBoughtProductFromITCategory && hasAttendedDiscountEvent) || !isPlatinum
+let hasPromotion = (lastMonthPaidMoreThan4000 && isWeekday && !hasBoughtProductFromITCategory && !hasAttendedDiscountEvent) || isPlatinum;
+
+console.log(hasPromotion);
+
+let john = (lastMonthPaidMoreThan4000 && isWeekday && !hasBoughtProductFromITCategory && hasAttendedDiscountEvent) || !isPlatinum
 hasPromotion = john
 console.log(hasPromotion);
